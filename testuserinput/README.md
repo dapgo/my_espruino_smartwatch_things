@@ -1,4 +1,4 @@
-# Test User Input
+# Test User Input for Bangle.js
 
 This very basic app, allows to *test the bangle.js input interface*, and displays the result in text or a switch on/off image.
 
