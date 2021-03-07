@@ -5,11 +5,11 @@ This is a very basic app that defines a common UI/UX for espruino smartwatchesm 
 
 Launcher icon
 
-![](.png)
+![](UI4swatch_icon.png)
 
 1st screen - Main page
 
-![](.png)
+![](UI4swatch_s1.png)
 
 ## Usage
 

@@ -6,10 +6,15 @@ For example "a common UI/UX" for espruino apps, app which is used as guideline/t
 
 ## UI4swatch
 A template for all
+![](/UI4swatch/UI4swatch_foto.png)
 
 ## Hello,world!
 
 ![](/helloworld/helloworld_es.png)
+
+## Color Catalog
+Colors and codes
+![](/color_catalog/color_catalog_foto.png)
 
 ## testUserInput
 

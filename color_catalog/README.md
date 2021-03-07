@@ -6,11 +6,15 @@ This apps is based in the "common UI/UX".
 
 Launcher icon
 
-![](.png)
+![](color_catalog.png)
 
-1st screen - Main page
+1st screen - page 1
 
-![](.png)
+![](color_catalog_s1.png)
+
+2nd screen - page
+
+![](color_catalog_s2.png)
 
 ## Usage
 

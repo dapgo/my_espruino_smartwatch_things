@@ -31,11 +31,11 @@ max printable position max_x-1 i.e 239
   
  var x_mid_screen=x_max_screen/2;
  
- //comment
+ //PEND comment
  console.log("*** UI dimensions***"); 
  console.log("x="+x_max_screen);
  console.log("y_wg_bottom="+y_wg_bottom);
- console.log("x_mid_screen="+x_mid_screen);
+ 
  
  
  //the biggest usable area, button area not included
