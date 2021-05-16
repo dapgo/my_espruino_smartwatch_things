@@ -2,3 +2,5 @@
 0.02: Tweaks for app loader
 0.03: Fix app icon, add change of colors
 0.04: Improvements and new round check option elements
+0.05: Supports bottom widgets and UI based in UI4swatch!
+0.06: Improvements, multiple rows with radio buttons
