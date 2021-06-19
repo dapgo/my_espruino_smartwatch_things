@@ -26,4 +26,5 @@ Also some GUI elemnts are used.
 
 ## Bottom Widgets
 Promoting the usage of the forgotten bottom area ;)
+
 ![](/widtextbottom/widTextBottom_ss1.jpg)
