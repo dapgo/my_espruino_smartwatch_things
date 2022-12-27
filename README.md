@@ -1,8 +1,11 @@
 # my_espruino_smartwatch_things
 
-Apps, forks and experiments for smartwatches, bangle.js, eucWatch or  P8expruino,...
+Apps, forks and experiments for smartwatches and its opensource "operating systems", bangle.js, eucWatch or  WatchApps (before P8expruino),...
 
-When possible same app will be crosscompatible with differente espruino watches, such as  bangle.js and P8
+Apps here are portable/standalone, of no need of an AppLoader, just upload them through BLE to the Storage system.
+When possible the same app/code will be crosscompatible with differente espruino watches, such as  bangle.js and P8
+
+Unfortunately it is very possible that i would update apps on the smatwatches repositories but don't do here. If you realize about it, just ask.
 
 For example "a common UI/UX" for espruino apps, app which is used as guideline/template for any other own app in this repository.
 
