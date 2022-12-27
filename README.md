@@ -9,13 +9,18 @@ Unfortunately it is very possible that i would update apps on the smatwatches re
 
 For example "a common UI/UX" for espruino apps, app which is used as guideline/template for any other own app in this repository.
 
+
+Last version of Apps for bangle.JS/JS2 can be found on my  ![Store/AppLoader](https://dapgo.github.io/BangleApps/)  fork:
+
+
+
 ## Mix Digital & Analog Clock
 ![](/mixdiganclock/photo_mixdigan_bjs1.jpg)
 
 ## Temperature Monitor
 ![](/tempmonitor/photo_banglejs1.jpg)
 
-## Widhwbttm
+## Widget HW bottom
 ![](/widhwbttm/screenshot.png)
 
 ## UI4swatch
