@@ -1,0 +1,26 @@
+####PENDING.
+Array for colors- allow changing colors on real time
+IMG icon color
+logic to detect bg color and set a color with contrast
+
+####ISSUES
+
+Bangle.CLOCK is giving Undefined when this clock is rnning
+true??
+"storage": [
+    {"name":"mixanadigclock.app.js","url":"mixanadigclock.js"},
+    {"name":"mixanadigclock.img","url":"mixanadigclock.js","evaluate":true}
+
+####POTENTIAL FEATURES IMPROVEMENTS.
+
+right areas-> change colors
+
+####Last improvements
+replaced g.setFontVector(height) by 
+	g.setFont("Vector", 60);
+ or below size 20 
+	replace g.setFontVector(13) by 
+		g.setFont("6x8",2 or  4x6 (built into all devices 
+
+Digital time above or under; better UX than reproducing real clocks
+

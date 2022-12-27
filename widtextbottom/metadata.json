@@ -1,0 +1,15 @@
+{
+  "id": "widtextbottom",
+  "name": "Bottom Text widget",
+  "version": "0.02",
+  "description": "Show text string with text or the free mem in Bottom widget area",
+  "icon": "widtextbottom.png",
+  "type": "clock",
+  "tags": "clock",
+  "supports": ["BANGLEJS","BANGLEJS"],
+  "readme": "README.md",
+  "allow_emulator": true,
+  "storage": [
+    {"name":"widtextbottom.wid.js","url":"widtextbottom.js"}
+  ]
+}

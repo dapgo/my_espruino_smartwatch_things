@@ -1,7 +1,9 @@
 # Digital clock widget (bottom widget area)
-This very basic widget allow to test using widget areas.
+This very basic widget clock shows time inside apps that respect the bottom widget area, also allows to test this unfrequently used area.
 
-forkeed from
+Compatible with BangleJS1,BangleJS2,and EMSCRIPTENx emulators
+
+forked from
 https://github.com/espruino/BangleApps/tree/master/apps/widclk
 
 ## Photo  
@@ -12,12 +14,10 @@ Example of usage
 
 
 
-
 ## Usage
 
 Upload the widget file
-Open an app that supports displaying widgets
-
+Open an app (not a clock/watchface) that supports displaying widgets (included the bottom one)
 
 
 
@@ -25,4 +25,4 @@ Open an app that supports displaying widgets
 
 This app is so basic that probably the easiest is to just edit the code ;)
 
-Otherwise you can contact me [here](https://github.com/dapgo)
+Otherwise you can contact me [here](https://github.com/dapgo/my_espruino_smartwatch_things)

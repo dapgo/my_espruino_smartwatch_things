@@ -1,0 +1,15 @@
+####PENDING.
+More colorss?
+do testing with small frequencies
+Better format for excel
+excel prepared to parse
+   =DATEVALUE(MID(A1;1;10))+TIMEVALUE(MID(A1;12;8))
+
+####ISSUES
+
+
+####POTENTIAL FEATURES IMPROVEMENTS.
+
+
+
+####Last improvements
