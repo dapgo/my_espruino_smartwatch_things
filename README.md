@@ -1,6 +1,6 @@
 # my_espruino_smartwatch_things
 
-Apps, forks and experiments for smartwatches and its opensource "operating systems", bangle.js, eucWatch or  WatchApps (before P8expruino),...
+Apps, forks and experiments for smartwatches and its opensource "operating systems", Bangle.JS, Bangle.JS2, eucWatch or  WatchApps (before P8expruino),...
 
 Apps here are portable/standalone, of no need of an AppLoader, just upload them through BLE to the Storage system.
 When possible the same app/code will be crosscompatible with differente espruino watches, such as  bangle.js and P8
@@ -8,6 +8,15 @@ When possible the same app/code will be crosscompatible with differente espruino
 Unfortunately it is very possible that i would update apps on the smatwatches repositories but don't do here. If you realize about it, just ask.
 
 For example "a common UI/UX" for espruino apps, app which is used as guideline/template for any other own app in this repository.
+
+## Mix Digital & Analog Clock
+![](/mixdiganclock/photo_mixdigan_bjs1.jpg)
+
+## Temperature Monitor
+![](/tempmonitor/photo_banglejs1.jpg)
+
+## Widhwbttm
+![](/widhwbttm/screenshot.png)
 
 ## UI4swatch
 A template for all
