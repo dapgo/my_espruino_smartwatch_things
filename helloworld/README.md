@@ -37,11 +37,12 @@ Counter for Times Display
 ## Controls
 
 finger swipe 
-button 1,2 and 3
+button 1 (2 and 3 for Bangle.JS1)
 touch screen left, center or right
 
 
 
 ## Creator
 
-Daniel Perez
+This app is so basic that probably the easiest is to just edit the code 
+Otherwise you can contact me [here](https://github.com/dapgo/my_espruino_smartwatch_things)

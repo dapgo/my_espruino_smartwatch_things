@@ -5,7 +5,7 @@
 SetUI, Layout, and setWatch( function(b) { }, BTN1, { repeat: true, edge:'falling' })
 */
 {
-var v_mode_debug=0; //, 0=no, 1 min, 2 prone detail
+var v_mode_debug=2; //, 0=no, 1 min, 2 prone detail
 //var required for drawing with dynamic screen
 var rect = Bangle.appRect;
 var history = [];
@@ -28,6 +28,26 @@ if (readFreq>saveFreq) console.log("Read refresh freq should be higher than savi
 if (v_mode_debug>0) console.log("original BG/FG color="+v_color_erase+" / "+v_color);
 
 
+//NEW TEST - not compatible with remove SetUI 
+/*
+function setDrawLayout(){
+var Layout = require("Layout");
+if (v_model=='BANGLEJS'||v_model=='EMSCRIPTEN')  v_font="6x8:2";    
+ else v_font="6x8";
+// to fix btn1 bjs2 is btn2 bjs1
+var layout = new Layout( {
+    //v vertical
+      type:"h", c: [
+        {type:"txt", font:v_font, label:".", id:"label", valign:1 }
+      ]
+    },  {btns:[
+    {label:"File", cb: l=>{print("log: btn1");toggleRecMode(1);},  cbl: l=>{print("log: long press btn1"); toggleRecMode(2);},font:v_font, col:"#f00"},
+    {label:"Launch", cb: l=>{print("log: btn2");mainBtnShortcut();},font:v_font, col:"#f00"},
+    {label:"Color", cb: l=>{print("log: btn3");changeBGcolor();},font:v_font, col:"#f00"}
+  ], lazy:true});
+  layout.render();  
+}
+*/
 
 function SetVariables(){
 //EMSCRIPTEN,EMSCRIPTEN2
@@ -265,7 +285,53 @@ function UserInput(){
             } 
       });  //endof setUI 
 
+   /* Replaced by SetUI
+   Bangle.on('swipe', dir => {
+        if(dir == 1) {          
+            if (v_mode_debug>0)  console.log("swipe right: ");
+            getFileInfo(v_filename);                
+           }
+        else {
+          if (v_mode_debug>0)  console.log("swipe left: ");  
+          changeBGcolor();
+           }
+      });
+      */
+    //touch (zone,obj) for (process.env.HWVERSION == 2) {
+    //only for hw2 bjs2 obj.x obj.y obj.type(no emul)
+    /*
+    Bangle.on('touch', function(tzone,tobj){        
+        //var h=Object.keys(tobj);        
+        if ((process.env.HWVERSION == 2)&&(v_mode_debug>0)){
+            console.log("tobj x,y,type : "+tobj.x+" "+tobj.y+" "+tobj.type);
+        }        
+        switch(tzone){            
+            case 1: //left managed by  setUI              
+                 break;
+            case 2: // right disable/enable recording   
+             //toggleRecMode(duration, exectime)                          
+                 toggleRecMode(0);                
+               break;
+            //case 3: console.log("Touch 3 aka 1+2 not for BJS1 emul");//center 1+2
+            //   break;
+        }
+    });*/
+    
 }
+
+// PREVIOUS APPROACH, but now simplified
+/*function setMainBtn() { 
+    //if messages app installed shortcut otherwise default access to launcher 
+    if  (require("Storage").read("messagegui.app.js")===undefined) 
+    {
+        if (require("Storage").read("messagelist.app.js")===undefined)  Bangle.showLauncher(); // implies btn2(js1)  btn(js2)- launcher
+        else if (v_model=='BANGLEJS'||v_model=='EMSCRIPTEN') setWatch(function (){load("messagelist.app.js");}, BTN2, { repeat: true });   
+            else setWatch(function (){load("messagelist.app.js");}, BTN1, { repeat: true });
+    }
+    else if (v_model=='BANGLEJS'||v_model=='EMSCRIPTEN') setWatch(function (){load("messagegui.app.js");}, BTN2, { repeat: true });   
+            else setWatch(function (){load("messagegui.app.js");}, BTN1, { repeat: true });
+    }
+*/
 
 function mainBtnShortcut() { 
     //if messages app installed shortcut otherwise default access to launcher 
@@ -280,6 +346,22 @@ function mainBtnShortcut() {
     }
 
 
+
+
+/* though it is the Better option for keys than setUI as this support long press
+   replaced by setUI OR layout (setDrawLayout()     
+function setBJS1Btns() { 
+    //only for bjs1, btns complementary to touch 
+        //setWatch(toggleRecMode, BTN1, { repeat: true });        
+        setWatch( function(btnx) {
+            //if (v_mode_debug>1) console.log("btn1 falling start"+btnx.time+" last : "+btnx.lastTime);            
+            toggleRecMode(((btnx.time-btnx.lastTime).toFixed(2)),btnx.time);
+        }, BTN1, { repeat: true, edge:'falling' }); //after release
+
+        setWatch(changeBGcolor, BTN3, {repeat:true}
+        );          
+    }
+*/
 // Show file size
 function getFileInfo(v_filename) {  
   var f = require("Storage").open(v_filename,"r");   
@@ -290,6 +372,7 @@ function getFileInfo(v_filename) {
  // g.drawString("file size:"+f.len, x, rect.y+37+v_font_size1);
   if (v_mode_debug>0)  console.log("file "+v_filename+" size: "+f.len);  
 }// not used
+
 
 
 //MAIN
@@ -303,10 +386,20 @@ introPage();
 
 UserInput(); //inc SetUI and back icon
 
+
+/*replaced by layout usage  setDrawLayout()   
+setMainBtn(); //central button and shortcut to messages 
+if (v_model=='BANGLEJS'||v_model=='EMSCRIPTEN') setBJS1Btns(); //assign btn1 and btn3
+*/
+
+
 setInterval(function() {
   getTemperature();
 }, readFreq); //ms
 
 setRecordingFreq();
 
+// setTimeout(ClearScreen, 3500); is necesary??? bg??
+//setTimeout(drawGraph,4000); is necesary??? bg??
+//setTimeout(getTemperature,4500); hardcoded
 }
