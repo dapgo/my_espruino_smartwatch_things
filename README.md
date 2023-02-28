@@ -16,7 +16,7 @@ Last version of Apps for bangle.JS/JS2 can be found on my  ![Store/AppLoader](ht
 
 
 | App          | watch1      | watch2 |watch3|watch4|
-|--------------|-----------|------------|
+|--------------|-----------|------------|------------|------------|
 | MixDiganClock | BangleJS1      | BangleJS2        |------------|------------|
 | Tempmonitor      | BangleJS1  | BangleJS2       |------------|------------|
 | Widget HW bottom      | BangleJS1  | BangleJS2       |------------|------------|
