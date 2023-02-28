@@ -1,18 +1,31 @@
 # my_espruino_smartwatch_things
 
-Apps, forks and experiments for smartwatches and its opensource "operating systems", Bangle.JS, Bangle.JS2, eucWatch or  WatchApps (before P8expruino),...
+This repository contains my code, apps, forks and experiments for smartwatches and its opensource "operating systems", Bangle.JS, Bangle.JS2, eucWatch or  WatchApps (before P8expruino),...
 
-Apps here are portable/standalone, of no need of an AppLoader, just upload them through BLE to the Storage system.
-When possible the same app/code will be crosscompatible with differente espruino watches, such as  bangle.js and P8
+Apps here are portable/standalone so, no need of an AppLoader, just upload them through BLE to the smartwatch Storage.
 
-Unfortunately it is very possible that i would update apps on the smatwatches repositories but don't do here. If you realize about it, just ask.
+When time and knowledge make possible, I will try to write crosscompatible code/apps that can work on different espruino watches, such as bangle.js1 bjs2 and P8,....
 
-For example "a common UI/UX" for espruino apps, app which is used as guideline/template for any other own app in this repository.
+Unfortunately it is very possible that I update apps on the official smartwatch repositories (aka AppLoader) but i forget to do here. If you realize about it, just ask.
 
+
+
+As a good practice I would try to use comnmon structures of code for all apps, that's why I wrote "a common UI/UX" for espruino apps, app which is used as guideline/template for any other own app in this repository.
 
 Last version of Apps for bangle.JS/JS2 can be found on my  ![Store/AppLoader](https://dapgo.github.io/BangleApps/)  fork:
 
 
+| App          | watch1      | watch2 |watch3|watch4|
+|--------------|-----------|------------|
+| MixDiganClock | BangleJS1      | BangleJS2        |------------|------------|
+| Tempmonitor      | BangleJS1  | BangleJS2       |------------|------------|
+| Widget HW bottom      | BangleJS1  | BangleJS2       |------------|------------|
+| Widget clock bottom     | BangleJS1  | BangleJS2  | P8 WatchApps| DK8 WatchApps|
+| UI4swatch      | BangleJS1  | BangleJS2       |------------|------------|
+| Hello,world!      | BangleJS1  | BangleJS2       |------------|------------|
+| Color Catalog      | BangleJS1  | BangleJS2       |------------|------------|
+| testUserInput      | BangleJS1  | BangleJS2       |------------|------------|
+| MyContacts    | P8  | eucWatch      |------------|------------|
 
 ## Mix Digital & Analog Clock
 ![](/mixdiganclock/photo_mixdigan_bjs1.jpg)
