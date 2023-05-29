@@ -1,6 +1,9 @@
+####NOTES
+Layout library (file: layout.) has to be uploaded to use the layout functions for buttons. 
+
+
 ####PENDING.
 More colorss?
-do testing with small frequencies
 Better format for excel
 excel prepared to parse
    =DATEVALUE(MID(A1;1;10))+TIMEVALUE(MID(A1;12;8))
@@ -9,7 +12,8 @@ excel prepared to parse
 
 
 ####POTENTIAL FEATURES IMPROVEMENTS.
-
+ - Long press for touch screen
+ - Be able to use of Layout/ setUI / setWatch
 
 
 ####Last improvements

@@ -25,7 +25,13 @@ Last version of Apps for bangle.JS/JS2 can be found on my  ![Store/AppLoader](ht
 | Hello,world!      | BangleJS1  | BangleJS2       |------------|------------|
 | Color Catalog      | BangleJS1  | BangleJS2       |------------|------------|
 | testUserInput      | BangleJS1  | BangleJS2       |------------|------------|
-| MyContacts    | P8  | eucWatch      |------------|------------|
+| MyContacts    | P8 ??  | eucWatch      |------------|------------|
+| p8_test_code.js   | P8+espruino  |------------|------------|------------|
+
+
+## p8_test_code.js
+To test your espruino fw, a  clock , info, colors and animated graphs
+![/testandverifyP8/p8_test_code.js]()
 
 ## Mix Digital & Analog Clock
 ![](/mixdiganclock/photo_mixdigan_bjs1.jpg)
