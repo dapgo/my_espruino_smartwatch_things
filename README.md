@@ -30,8 +30,13 @@ Last version of Apps for bangle.JS/JS2 can be found on my  ![Store/AppLoader](ht
 
 
 ## p8_test_code.js
-To test your espruino fw, a  clock , info, colors and animated graphs
+To test your espruino fw, a  clock , info, colors and animated graphs.
+Useful to check the state of your flashing process.
+
+Just upload to RAM from webide code or as a file to storage 
 ![/testandverifyP8/p8_test_code.js]()
+![/testandverifyP8/p8_test_code.js](/testandverifyP8/P8test0.png)
+![](/testandverifyP8/P8test1.png)
 
 ## Mix Digital & Analog Clock
 ![](/mixdiganclock/photo_mixdigan_bjs1.jpg)
